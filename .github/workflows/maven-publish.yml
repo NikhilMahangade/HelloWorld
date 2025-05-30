@@ -21,8 +21,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    
 
     - name: Run HelloWorld
       run: java -cp target/classes print.Hello
